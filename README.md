@@ -86,3 +86,6 @@ Key Findings Summary :
 4. Deploy an Intrusion Detection System (IDS).
 5. Strengthen password policy and implement a password management system.
 6. Formally classify all assets and establish a legacy system maintenance schedule.
+
+Author 
+Tanishaa S
