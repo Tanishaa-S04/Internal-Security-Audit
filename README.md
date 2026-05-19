@@ -27,18 +27,21 @@ No disaster recovery plan existed and no backups of critical data were maintaine
 
 ## 2. PCI-DSS (Payment Card Industry Data Security Standard) :
 PCI-DSS applies because Botium Toys accepts and processes customer credit card payments online. Any organization that handles cardholder data must meet these standards or risk heavy fines and loss of payment processing privileges.
+
 ### How I applied it:
 I evaluated Botium Toys against PCI-DSS best practices and found that all 4 key requirements were not being met:
 1. All employees had unrestricted access to cardholder data - violating the principle that only authorized users should have access.
 2. Credit card information was stored and transmitted without encryption - a direct violation of PCI-DSS data protection requirements.
 3. No encryption procedures were in place at payment touchpoints.
-4. Password policies were weak with no centralized management system, making accounts vulnerable to brute force attacks
+4. Password policies were weak with no centralized management system, making accounts vulnerable to brute force attacks.
+   
 Conclusion: Botium Toys was fully non-compliant with PCI-DSS at the time of the audit, exposing the company to regulatory fines and potential data breaches.
 
 ## 3. GDPR (General Data Protection Regulation):
 GDPR applies because Botium Toys serves customers in the European Union. Any organization that collects or processes EU customer data must comply with GDPR regardless of where the company is based.
 ### How I applied it:
 I assessed 4 GDPR requirements and found a mixed picture — 2 met, 2 not met:
+
 Not met:
 1. EU customer data was not adequately secured — no encryption meant financial and personal data was exposed.
 2. Assets had been listed but not formally classified, meaning the organization could not fully account for what data it held or where.
@@ -53,8 +56,10 @@ Conclusion: Botium Toys had made some progress toward GDPR compliance, but remai
 SOC reports verify whether an organization's data handling controls exist and work effectively over time.
 1. SOC Type 1 checks whether the right controls exist on paper.
 2. SOC Type 2 checks whether those controls actually operate effectively over time.
+   
 ### How I applied it:
 I evaluated 4 SOC-related best practices and found that 2 were not met:
+
 Not met:
 1. No user access policies were established — least privilege and separation of duties were absent, meaning all employees could access sensitive internal data.
 2. PII and SPII were not kept confidential — no encryption meant sensitive personal data was unprotected.
